@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <img src="lain green.gif" alt="">
+        <p>lain green</p>
+    </div>
+    <div>
+        <img src="lain.gif" alt="">
+        <p>lain</p>
+    </div>
+    <div>
+        <img src="lingling_button3.gif" alt="">
+        <p>button</p>
+    </div>
+
+</body>
+<script>
+    window.onload = function () {
+        var paragraphs = document.getElementsByTagName('p');
+        for (var i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].style.border = '1px solid black';
+        }
+        // Get the image element
+        var image = document.getElementsByTagName('img')[0];
+        // Apply the roundedImg class and set the src and alt attributes
+        image.className = 'roundedImg';
+        image.src = 'lain green.gif';
+        image.alt = 'lain oval gif';
+    };
+</script>
+
+</html>
